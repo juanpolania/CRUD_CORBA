@@ -13,7 +13,7 @@ public class Persona extends PersonaApp.PersonaPOA {
         boolean resultado = false;
         try {
             String query = "insert into persona(identificacion,nombre,apellido,direccion,telefono,email)"
-                    + "values ('"+identificacion+"','"+apellido+"','"+direccion+"','"+telefono+"','"+email+"')";
+                    + "values ('"+identificacion+"','"+nombre+"','"+apellido+"','"+direccion+"','"+telefono+"','"+email+"')";
             conex.conexion();
             Statement st = conex.conex.createStatement();
             int valor = st.executeUpdate(query);
